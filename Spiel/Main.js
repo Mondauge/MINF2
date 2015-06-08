@@ -2,14 +2,16 @@ var DictatorBeatdown = new Phaser.Game(1280, 720, Phaser.AUTO, '', {preload: pre
 
 function preload() {
 
-game.load.tilemap('map', 'MINF2SPIEL/assets/map.json', null, Phaser.Tilemap.Tiled_JSON);
-
-game.load.image('sky' 'MINF2SPIEL/assets/sky.png');
-
-game.load.image('stone' 'MINF2SPIEL/assets/stone.png');
+// game.load.image.('sky' 'assets/sky.png')
 }
 
+var platforms;
+
 function create() {
+
+game.physics.startSystem(Phaser.Physics.ARCADE);
+
+//game.add.sprite (0,0, 'sky');
 
 }
 
