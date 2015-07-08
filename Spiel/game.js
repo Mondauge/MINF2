@@ -6,10 +6,9 @@ function preload() {
     game.load.audio('lazor', 'assets/laser.mp3');
 
 	game.load.image('sky', 'assets/sky.png');
-	game.load.image('ground', 'assets/stone.png');
 
-    game.load.spritesheet('hitler', 'assets/hitlerbewegung2.png', 185, 349, 18);
-    game.load.spritesheet('putin', 'assets/putinbewegung2.png', 185, 349, 17);
+    game.load.spritesheet('hitler', 'assets/hitlerbewegung.png', 185, 349, 18);
+    game.load.spritesheet('putin', 'assets/putinbewegung.png', 185, 349, 17);
     game.load.spritesheet('controller', 'assets/controller-indicator.png', 16,16);
     game.load.spritesheet('healthbar1', 'assets/healthbar1.png', 382, 82);
     game.load.spritesheet('healthbar2', 'assets/healthbar2.png', 382, 82);
@@ -278,7 +277,7 @@ function update() {
 
     game.debug.text(health1, 500,100 , "black", "30px Arial");
     game.debug.text(health2, 750,100 , "black", "30px Arial");
-    game.debug.text(player2.block2, 300, 300, 'black', '30px Arial');
+    //game.debug.text(player2.block2, 300, 300, 'black', '30px Arial');
 
 }
 
